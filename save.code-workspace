@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\..\\clean-slider-with-curved-background\\dist"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dist"
+	}
+}
