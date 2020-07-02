@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Muli:wght@200;400;500&display=swap");
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url("/images/preloader.gif") no-repeat center;
+  z-index: 999;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.specification h1 {
+  text-align: center;
+  font-family: 'Arvo', serif;
+}
+
+.specification .parallax1 {
+  background: url(/images/all_images/01.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  border-radius: 4px;
+}
+
+.amenities h1 {
+  text-align: center;
+  font-family: 'Arvo', serif;
+}
+
+.amenities p {
+  font-family: 'Muli', sans-serif;
+}
+
+.amenities a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.amenities1 h1 {
+  text-align: center;
+  font-family: 'Arvo', serif;
+}
+
+.amenities1 ul {
+  font-family: 'Muli', sans-serif;
+}
+
+.responsive {
+  width: 100%;
+  height: 500px;
+  border-radius: 4px;
+}
+
+.container {
+  width: 80% auto;
+  margin: 0 auto;
+}
+
+.layout1 row center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.layout1 h1 {
+  font-family: 'Arvo', serif !important;
+}
+
+.container1 h1 {
+  font-family: 'Arvo', serif;
+}
+
+.container1 p {
+  font-family: 'Muli', sans-serif;
+}
+
+.container1 h3 {
+  font-family: 'Arvo', serif;
+}
+
+.parallax {
+  background: url(/images/all_images/06.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  border-radius: 4px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 100px;
+}
+
+header logo {
+  position: relative;
+  width: 200;
+  height: 80;
+  top: 0;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  font-family: 'Arvo', serif;
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+main {
+  width: 80%;
+}
+
+main a {
+  display: inline-block;
+  background: white;
+  color: white;
+  padding: .8em;
+  margin-top: 2em;
+}
+
+.gallery-block {
+  margin: 1px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.gallery-block .heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.gallery-block .heading h2 {
+  font-family: 'Arvo', serif;
+  text-transform: uppercase;
+}
+
+.gallery-block.compact-gallery .item {
+  overflow: hidden;
+  margin-bottom: 0;
+  background: white;
+  opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info {
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity: 1;
+  color: #fff;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.39)));
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body {
+  font-size: 0.8em;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+@media (min-width: 576px) {
+  .gallery-block.compact-gallery .item .description {
+    opacity: 0;
+  }
+  .gallery-block.compact-gallery .item a:hover .description {
+    opacity: 1;
+  }
+  .gallery-block .zoom-on-hover:hover .image {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0.7;
+  }
+}
+
+iframe {
+  display: block;
+  width: 65vw;
+  height: calc(75 * 65vw);
+  max-height: 450px;
+  max-width: 600px;
+  margin: -1em auto !important;
+  border: solid 1px gray;
+  -webkit-box-shadow: 2px 2px 2px silver;
+          box-shadow: 2px 2px 2px silver;
+  border-radius: 4px;
+}
+
+.scroll-right {
+  margin-top: -5px;
+  margin-bottom: -17px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: #1b2331;
+  color: white;
+  border: solid #1b2331;
+}
+
+.scroll-right p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  /* Apply animation to this element */
+  -webkit-animation: scroll-right 15s linear infinite;
+  animation: scroll-right 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+
+@-webkit-keyframes scroll-right {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    /* Browser bug fix */
+    -webkit-transform: translateX(-100%);
+    /* Browser bug fix */
+    transform: translateX(-100%);
+  }
+  100% {
+    /* Browser bug fix */
+    -webkit-transform: translateX(100%);
+    /* Browser bug fix */
+    transform: translateX(100%);
+  }
+}
+
+video {
+  width: 50% !important;
+  min-width: 100%;
+  height: 70%  !important;
+  margin: 0 auto;
+  display: block;
+}
+
+.center-block {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 450px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
