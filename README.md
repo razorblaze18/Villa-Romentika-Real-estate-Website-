@@ -1,37 +1,82 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <title>Villa Romentika</title>
+  <link rel="stylesheet" href="style.css">
 
-You can use the [editor on GitHub](https://github.com/razorblaze18/Villa-Romentika-Real-estate-Website-/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+</head>
+<body>
+	<!-- preloader	 -->
+<!-- partial:index.partial.html -->
+<!-- first, let's make the nav -->
+<nav class="layer">
+<ul>
+	<li><a href="about.html">About</a></li>
+	<li><a href="layout.html">Layout</a></li>
+	<li><a href="amenities.html">Amenities</a></li>
+	<li><a href="specification.html">Specification</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!-- now let's create the layer that will initially cover the nav -->
+<section class="front page layer">
+				<!-- slider banner	 -->
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/razorblaze18/Villa-Romentika-Real-estate-Website-/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+					  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						  <div class="info">
+								<h1>Villa ROMENTIKA</h1>
+								<p>Timeless ELegence</p>
+							</div>
+					  </div>
+					  <div class="carousel-item">
+						  <div class="info">
+								<h1>Luxury Premium Villas</h1>
+								<p>Fall in love with nature</p>
+							</div>
+					  </div>
+					  <div class="carousel-item">
+						  <div class="info">
+								<h1>@ Vasna, Bhayli Road</h1>
+							</div>
+					  </div>
+					  <div class="carousel-item">
+						  <div class="info">
+							</div>
+					  </div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				  </div>
+			  </div>
+		  </div>
+</section>
+<!-- partial -->
+  <!-- bootstrap cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<!-- jquery cdn -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<!-- bootstrap javascript cdn -->
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
